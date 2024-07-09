@@ -53,9 +53,36 @@ a {
 }
 
 main {
+  text-align: center;
   flex: 1;
 }
 
 .container {
-  padding-inline: 2.3125rem;
+  width: 90%;
+  max-width: 80.375rem;
+  padding-inline: 1.14rem;
+  margin-inline: auto;
+}
+
+section.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 3.8125rem;
+  margin-block: 3.75rem 4rem;
+}
+
+section.hero > * {
+  flex: 1;
+}
+
+@media (min-width: 48rem) {
+  main {
+    text-align: left;
+  }
+
+  section.hero {
+    flex-direction: row;
+    gap: 3.3125rem;
+    margin-block: 5.375rem 1.3125rem;
+  }
 }
