@@ -82,6 +82,27 @@ section.hero > * {
   flex: 1;
 }
 
+.cta {
+  display: block;
+  max-width: 12.5rem;
+  margin: 1.5rem auto 0;
+  padding: 0.6875rem 1.5rem;
+  background: hsl(var(--clr-white));
+  color: hsl(var(--clr-violet));
+  border-radius: 5rem;
+  font-family: var(--ff-poppins);
+  font-size: 0.75rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition-duration: 200ms;
+  outline: transparent;
+  text-align: center;
+}
+
+.cta:is(:hover, :focus-visible) {
+  background: hsl(var(--clr-magenta));
+  color: hsl(var(--clr-white));
+}
+
 .social-list {
   padding-bottom: 2.5rem;
   display: flex;
@@ -138,5 +159,11 @@ section.hero > * {
     flex-direction: row;
     gap: 3.3125rem;
     align-items: start;
+  }
+
+  .cta {
+    font-size: 1.125rem;
+    margin-inline: unset;
+    padding: 0.8125rem 2rem 1rem;
   }
 }
