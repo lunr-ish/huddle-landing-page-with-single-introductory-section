@@ -72,6 +72,7 @@ main {
 
 section.hero {
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 3.8125rem;
   margin-block: 3.75rem 4rem;
@@ -81,7 +82,32 @@ section.hero > * {
   flex: 1;
 }
 
-@media (min-width: 48rem) {
+.social-list {
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.6875rem;
+}
+
+.social-link {
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  border: 1px solid;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  transition-duration: 200ms;
+  font-size: 0.8rem;
+}
+
+.social-link:is(:hover, :focus-visible) {
+  color: hsl(var(--clr-magenta));
+}
+
+@media (min-width: 68rem) {
   main {
     text-align: left;
   }
@@ -91,8 +117,19 @@ section.hero > * {
   }
 
   section.hero {
+    margin-block: 5.375rem 1.3125rem;
     flex-direction: row;
     gap: 3.3125rem;
-    margin-block: 5.375rem 1.3125rem;
+    align-items: start;
+  }
+
+  .social-list {
+    gap: 1rem;
+  }
+
+  .social-link {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
   }
 }
