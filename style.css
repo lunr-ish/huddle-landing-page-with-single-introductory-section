@@ -82,6 +82,17 @@ section.hero > * {
   flex: 1;
 }
 
+.hero__title {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-semi-bold);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.hero__description {
+  line-height: 1.5;
+}
+
 .cta {
   display: block;
   max-width: 12.5rem;
@@ -159,6 +170,15 @@ section.hero > * {
     flex-direction: row;
     gap: 3.3125rem;
     align-items: start;
+  }
+
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero__description {
+    font-size: 1.125rem;
   }
 
   .cta {
