@@ -117,7 +117,7 @@ section.hero > * {
 .social-list {
   padding-bottom: 2.5rem;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 0.6875rem;
 }
 
@@ -185,5 +185,9 @@ section.hero > * {
     font-size: 1.125rem;
     margin-inline: unset;
     padding: 0.8125rem 2rem 1rem;
+  }
+
+  .social-list {
+    justify-content: flex-end;
   }
 }
