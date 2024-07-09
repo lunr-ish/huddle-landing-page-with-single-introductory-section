@@ -107,20 +107,13 @@ section.hero > * {
   color: hsl(var(--clr-magenta));
 }
 
-@media (min-width: 68rem) {
-  main {
-    text-align: left;
-  }
-
+@media (min-width: 40rem) {
   .logo-wrapper {
     max-width: 13.5rem;
   }
 
   section.hero {
-    margin-block: 5.375rem 1.3125rem;
-    flex-direction: row;
-    gap: 3.3125rem;
-    align-items: start;
+    max-width: 33rem;
   }
 
   .social-list {
@@ -131,5 +124,19 @@ section.hero > * {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 68rem) {
+  main {
+    text-align: left;
+  }
+
+  section.hero {
+    max-width: unset;
+    margin-block: 5.375rem 1.3125rem;
+    flex-direction: row;
+    gap: 3.3125rem;
+    align-items: start;
   }
 }
