@@ -9,3 +9,43 @@
   --fw-regular: 400;
   --fw-semi-bold: 600;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: var(--ff-open-sans);
+  font-weight: var(--fw-regular);
+  font-size: 1rem;
+  background: hsl(var(--clr-violet));
+  color: hsl(var(--clr-white));
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
