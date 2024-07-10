@@ -26,7 +26,8 @@ body {
   font-family: var(--ff-open-sans);
   font-weight: var(--fw-regular);
   font-size: 1rem;
-  background: hsl(var(--clr-violet));
+  background: hsl(var(--clr-violet)) url("./images/bg-mobile.svg") top/contain
+    no-repeat;
   color: hsl(var(--clr-white));
   display: flex;
   flex-direction: column;
@@ -140,6 +141,12 @@ section.hero > * {
 }
 
 @media (min-width: 40rem) {
+  body {
+    background-image: url("./images/bg-desktop.svg");
+    background-position: left;
+    background-size: cover;
+  }
+
   .logo-wrapper {
     max-width: 13.5rem;
   }
@@ -192,5 +199,11 @@ section.hero > * {
 
   .social-list {
     justify-content: flex-end;
+  }
+}
+
+@media (min-width: 82rem) {
+  body {
+    background-size: contain;
   }
 }
