@@ -148,6 +148,20 @@ section.hero > * {
     max-width: 33rem;
   }
 
+  .hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero__description {
+    font-size: 1.125rem;
+  }
+
+  .cta {
+    font-size: 1.125rem;
+    padding: 0.8125rem 2rem 1rem;
+  }
+
   .social-list {
     gap: 1rem;
   }
@@ -172,19 +186,8 @@ section.hero > * {
     align-items: start;
   }
 
-  .hero__title {
-    font-size: 2.5rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .hero__description {
-    font-size: 1.125rem;
-  }
-
   .cta {
-    font-size: 1.125rem;
     margin-inline: unset;
-    padding: 0.8125rem 2rem 1rem;
   }
 
   .social-list {
