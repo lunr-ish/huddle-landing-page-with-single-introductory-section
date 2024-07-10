@@ -186,7 +186,7 @@ section.hero > * {
   }
 
   section.hero {
-    max-width: unset;
+    max-width: 80.375rem;
     margin-block: 5.375rem 1.3125rem;
     flex-direction: row;
     gap: 3.3125rem;
